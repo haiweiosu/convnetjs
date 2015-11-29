@@ -54,6 +54,8 @@ function update(){
   if(counter === 0) smooth_loss = loss;
   else smooth_loss = 0.99*smooth_loss + 0.01*loss;
 
+  document.write(smooth_loss);
+
   var t = '';
   t += 'loss: ' + smooth_loss;
   t += '<br>'
